@@ -1,0 +1,60 @@
+*{
+  margin: 0
+}
+
+.container{
+  width: 85%;
+  margin: auto;
+}
+
+span{
+  display: none;
+  width: 33px;
+  height: 4px;
+  background-color:black;
+}
+span:nth-child(2){
+  margin: 5px 0;
+}
+
+nav{
+  display: flex;
+  align-items: baseline;
+  justify-content:
+}
+
+h2{
+  margin-right: auto;
+}
+
+ul{
+  display: flex;
+  padding-left: 0;
+}
+
+li{
+  list-style: none;
+  margin-left: 15px;
+}
+
+@media (max-width: 750px){
+  nav{
+    flex-direction: column;
+  }
+  span{
+    display: block;
+  }
+  ul{
+    flex-direction: column;
+  }
+  li{
+    margin: 0;
+  }
+  .hamburger{
+    margin-top: 15px;
+  }
+  .hamburger:hover{
+    cursor: pointer;
+  }
+
+}
