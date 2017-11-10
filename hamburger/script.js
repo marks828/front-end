@@ -1,11 +1,20 @@
 let hamburger = $('.hamburger')
 let nav = $('.nav')
 
-nav.hide()
 
-hamburger.click(()=>{
-  hamburger.toggleClass('active')
-  nav.toggle()
+
+$(document).ready(()=>{
+
+
+if($(window).width()>= 751){
+  hamburger.show()
+}
+  else{
+    hamburger.click(()=>{
+      hamburger.css('display: inherit')
+      nav.toggle()
+    })
+  }
   // if (hamburger.hasClass() === false){
   //   hamburger.addClass('active')
   //   nav.show()
@@ -14,4 +23,5 @@ hamburger.click(()=>{
   //   hamburger.removeClass('active')
   //   nav.hide()
   // }
+
 })

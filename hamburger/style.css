@@ -41,8 +41,14 @@ li{
   nav{
     flex-direction: column;
   }
+  .nav{
+    display: none;
+  }
   span{
     display: block;
+  }
+  .logo{
+    margin-top: 15px;
   }
   ul{
     flex-direction: column;
