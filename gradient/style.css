@@ -1,6 +1,3 @@
-.linear{
-}
-
 .top{
   width: 200px;
   height: 200px;
@@ -43,6 +40,36 @@
   height: 200px;
   background: radial-gradient(circle at top left, red, yellow);
   margin-bottom: 10px;
+  display: inline-block;
+}
+
+.topleft{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at bottom right, red, yellow);
+  /*transform: rotate(180deg);*/
+  display: inline-block;
+}
+
+.topright{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at bottom left, red, yellow);
+  display: inline-block;
+
+}
+
+.bottomleft{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top right, red, yellow);
+  display: inline-block;
+}
+
+.bottomright{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top left, red, yellow);
   display: inline-block;
 }
 
