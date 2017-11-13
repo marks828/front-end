@@ -53,3 +53,12 @@
   margin-bottom: 10px;
   display: inline-block;
 }
+
+.image{
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to right, transparent, lightblue),
+    url('https://images.pexels.com/photos/210893/pexels-photo-210893.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  margin-bottom: 100px;
+
+}
