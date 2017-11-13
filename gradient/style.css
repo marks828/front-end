@@ -1,0 +1,55 @@
+.linear{
+}
+
+.top{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.right{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.diagonal{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.circleOne{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: radial-gradient(red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.circletwo{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle closest-side, red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.circlethree{
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top left, red, yellow);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.tri{
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, red, white, red);
+  margin-bottom: 10px;
+  display: inline-block;
+}
