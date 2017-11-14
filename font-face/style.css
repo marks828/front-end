@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Pacifico', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Pacifico') format('woff');
+}
+
+p{
+  font-family: 'Pacifico';
+}
