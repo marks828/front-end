@@ -9,14 +9,8 @@ $(document).ready(()=>{
   // VARIABLE OBJECT
   let calculator = {
     add: (x,y)=> sum = x + y, // implicit return (one line)
-    sub: (x, y) => {
-      diff = x - y
-      return diff // not implicit return
-    },
-    multiply: (x ,y) =>{
-      product = x * y
-      return product
-    },
+    sub: (x, y) => diff = x - y,
+    multiply: (x ,y) => product = x * y,
     divide: (x, y) => quotient = x/y,
     exponent: (x, y)=> expo = Math.pow(x, y),
   }
@@ -25,17 +19,20 @@ $(document).ready(()=>{
   let x = $('.x')
   let y = $('.y')
   let answer = $('.answer')
-  let xVal = parseInt(x.val())
-  let yVal = parseInt(y.val())
 
   // TESTING OBJECT INTEGRATION INTO FUNCTION
   // $('.add').click(function(){
+  //   let xVal = parseInt(x.val())
+  //   let yVal = parseInt(y.val())
   //   let final = calculator.add(xVal, yVal)
+  //   console.log(final);
   //   answer.html(final)
   // })
 
   // FINAL CODE WITH "THIS" IN USE
   $('button').click(function(){
+    let xVal = parseInt(x.val())
+    let yVal = parseInt(y.val())
     if($(this).hasClass('add')===true){
       let final = calculator.add(xVal, yVal)
       answer.html(final)
