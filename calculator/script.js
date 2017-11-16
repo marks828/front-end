@@ -29,6 +29,7 @@ $(document).ready(()=>{
   //   answer.html(final)
   // })
 
+
   // FINAL CODE WITH "THIS" IN USE
   $('button').click(function(){
     let xVal = parseInt(x.val())
@@ -36,6 +37,7 @@ $(document).ready(()=>{
     if($(this).hasClass('add')===true){
       let final = calculator.add(xVal, yVal)
       answer.html(final)
+      console.log(final);
     }
     else if($(this).hasClass('sub')===true){
       let final = calculator.sub(xVal, yVal)
@@ -54,5 +56,6 @@ $(document).ready(()=>{
       answer.html(final)
     }
   })
+
 
 })
