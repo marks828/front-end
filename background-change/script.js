@@ -8,6 +8,8 @@ $(document).ready(function(){
   let addNewColor = $('.addNewColor')
   let input = $('input')
 
+  backgroundColor()
+
   // shuffle function
   function shuffle(array){
     for(let i=array.length - 1; i>0; i--){
@@ -19,12 +21,13 @@ $(document).ready(function(){
     return array
   }
 
-  body.css("background-color", shuffleArray[0])
-
+  function backgroundColor(){
+    body.css("background-color", shuffleArray[0])
+  }
   // button click to change background
   change.click(function(){
     let newBackground = shuffle(colors)
-    body.css("background-color", newBackground[0])
+    backgroundColor()
   })
 
   // ADD NEW COLOR
@@ -32,7 +35,7 @@ $(document).ready(function(){
   addNewColor.click(function(){
     let newColor = input.val()
     colors.push(newColor)
-    console.log(colors);
     input.val('')
   })
+
 })
