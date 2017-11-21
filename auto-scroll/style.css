@@ -1,11 +1,18 @@
 *{
   margin: 0;
+  list-style: none;
+}
+ul{
+  padding: 0;
+  margin-left: 10px;
+}
+li{
+  padding:10px 0;
 }
 
 .container{
   margin: 0 auto;
   width: 90%;
-  text-align: center;
 }
 
 .div{
@@ -13,12 +20,12 @@
   height: calc(100vh);
 }
 
-.topdiv{
+.blue{
   background-color: lightblue;
 }
-.middiv{
+.orange{
   background-color: orange;
 }
-.botdiv{
+.yellow{
   background-color: yellow;
 }
