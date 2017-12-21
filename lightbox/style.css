@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+}
+img{
+  width: 10%;
+  display: block;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.light-box{
+  height: calc(90vh);
+  width: auto;
+  margin: auto;
+  z-index: 2;
+}
+
+
+.bottom{
+  background: lightblue;
+}
+
+p{
+  color:red;
+}
