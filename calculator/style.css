@@ -1,3 +1,14 @@
 p{
   display: inline;
 }
+
+.row{
+  display: flex;
+}
+
+.row div{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
